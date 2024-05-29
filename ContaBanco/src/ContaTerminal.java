@@ -19,7 +19,7 @@ public class ContaTerminal {
         System.out.println("Digite o Saldo do Cliente");
         Float saldo = scanner.nextFloat();   
 
-        System.out.println("Ola " + cliente + ", obrigado por criar uma conta em nosso banco, sua agencia é " 
+        System.out.println("Ola " + cliente.toUpperCase() + ", obrigado por criar uma conta em nosso banco, sua agencia é " 
         + agencia + ", conta " + conta + ", e seu saldo " + saldo + " já esta disponivel para saque" );
 
         scanner.close();
