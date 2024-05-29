@@ -8,7 +8,7 @@ public class ContaTerminal {
         System.out.println("Digite o numero da conta");
         int conta = scanner.nextInt();
 
-        System.out.println("Digite o nome da Agência");
+        System.out.println("Digite o numero da Agência");
         String agencia = scanner.next();
 
         scanner.nextLine();
@@ -17,11 +17,11 @@ public class ContaTerminal {
         String cliente = scanner.nextLine();
 
         System.out.println("Digite o Saldo do Cliente");
-        Double saldo = scanner.nextDouble();   
-        
-        scanner.close();
+        Float saldo = scanner.nextFloat();   
 
-        System.out.println("Ola " + cliente + ", obrigado por criar uma conta em nosso banco, sua agencia é " + agencia + ", conta " + conta + 
-        ", conta " + conta + ", e seu saldo " + saldo + " já esta disponivel para saque" );
+        System.out.println("Ola " + cliente + ", obrigado por criar uma conta em nosso banco, sua agencia é " 
+        + agencia + ", conta " + conta + ", e seu saldo " + saldo + " já esta disponivel para saque" );
+
+        scanner.close();
     }
 }
